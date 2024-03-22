@@ -1,0 +1,6 @@
+defaults:
+  - p2_eps_cont
+  - _self_
+
+architecture: "guided_diffusion.diffusion.continuous_diffusion.ProgressiveContinuousDiffusion"
+target_type: double_eps

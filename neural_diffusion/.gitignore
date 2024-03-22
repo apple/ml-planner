@@ -1,0 +1,14 @@
+# do not commit these folders
+build/
+checkpoints/
+samples/
+samples2/
+logs/
+tools/
+outputs/
+datasets/*.zip
+datasets/data/
+*.pyc
+*.egg-info
+*.o
+*.so

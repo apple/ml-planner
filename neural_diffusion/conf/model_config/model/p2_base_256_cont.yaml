@@ -1,0 +1,7 @@
+defaults:
+  - p2_base_256
+  - _self_
+
+# continuous diffuison model do not learn sigma
+learn_sigma: False
+sigma_small: True

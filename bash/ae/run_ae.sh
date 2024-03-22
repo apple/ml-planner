@@ -1,0 +1,12 @@
+python text_autoencoder/autoencoder/train.py \
+--log_interval 10 --val_interval 10 --batch_size 2 --valid_size 1024 \
+--epoch 1 \
+--num_feature 16 --sentence_len 256 \
+--train_pt_dir data-bin/dummy_data/parsed/train --dev_pt_dir data-bin/dummy_data/parsed/dev \
+--h_noiser vae --h_noiser_ratio 0.00001 \
+--h_tanh \
+--enc_model bert-large-uncased \
+--dec_model gpt2-medium \
+--load_dec True \
+--latent_size 1024 \
+--share_gpts True \

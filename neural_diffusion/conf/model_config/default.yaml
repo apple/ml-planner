@@ -1,0 +1,4 @@
+defaults:
+  - model: default
+  - diffusion: default
+  - _self_

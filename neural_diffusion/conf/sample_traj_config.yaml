@@ -1,0 +1,13 @@
+defaults:
+  - sample_config
+  - _self_
+
+num_samples: 1
+batch_size: 16
+
+look_at: [0, 0, 0.2]
+fov: 18.837
+radius: 2.7
+num_frames: 60
+pitch_range: 0.25
+yaw_range: 0.35

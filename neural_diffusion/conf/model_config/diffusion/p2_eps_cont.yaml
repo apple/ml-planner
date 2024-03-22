@@ -1,0 +1,8 @@
+defaults:
+  - default
+  - _self_
+
+continuous: True
+step_cond: time
+p2_gamma: 1
+p2_k: 1

@@ -1,0 +1,19 @@
+defaults:
+  - p2_base_256
+  - _self_
+
+architecture: guided_diffusion.model.cond_dit.CondDiT
+
+# continuous diffuison model do not learn sigma
+learn_sigma: False
+sigma_small: True
+
+# 
+in_channels: 1024
+image_size: 16
+
+cond_feature: False
+cond_model: None
+cond_finetune: True
+cond_dim: 512
+

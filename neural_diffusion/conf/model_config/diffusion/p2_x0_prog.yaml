@@ -1,0 +1,7 @@
+defaults:
+  - p2_x0_cont
+  - _self_
+
+architecture: "guided_diffusion.diffusion.continuous_diffusion.ProgressiveContinuousDiffusion"
+predict_xstart: True
+target_type: x0

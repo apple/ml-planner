@@ -1,0 +1,24 @@
+# default diffusion hyperparameters
+
+diffusion_steps:        1000
+noise_schedule:         "linear"
+timestep_respacing:     ""
+
+use_kl:                 False
+use_ddim:               False
+predict_xstart:         False
+target_type:            ~
+learn_sigma:            ${..model.learn_sigma}
+sigma_small:            ${..model.sigma_small}
+
+rescale_timesteps:      False
+rescale_learned_sigmas: True
+
+# continuous diffusion
+step_cond: "time"
+continuous: False
+continuous_sampling: False
+
+# P2-weighting setup
+p2_gamma: 0
+p2_k: 1

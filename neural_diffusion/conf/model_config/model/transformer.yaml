@@ -1,0 +1,20 @@
+# default model configuration
+architecture: guided_diffusion.model.transformer.VisionTransformer
+
+# placeholder
+image_size: 16
+
+# dimension params
+img_size: 16
+patch_size: 4
+in_chans: 1
+embed_dim: 768
+
+# continuous diffuison model do not learn sigma
+# TODO: check with @Jiatao
+learn_sigma: False
+sigma_small: True
+
+# TODO: check with @Jiatao
+use_fp16: ${use_fp16}
+use_checkpoint: False

@@ -1,0 +1,6 @@
+defaults:
+  - p2_base_256_cont
+  - _self_
+
+# architecture: guided_diffusion.model.unet.NoUNetModel
+average_skip_connection: True

@@ -1,0 +1,7 @@
+defaults:
+  - p2_base_256_cont
+  - _self_
+
+# change the model architecture
+architecture: guided_diffusion.model.nerf.LightFieldModel
+lf_input: 'od_fourier'

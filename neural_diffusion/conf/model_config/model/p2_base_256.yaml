@@ -1,0 +1,13 @@
+defaults:
+  - default
+  - _self_
+
+image_size: 256
+num_channels: 128
+num_res_blocks: 1
+num_head_channels: 64
+
+learn_sigma: True
+
+attention_resolutions: "16"
+resblock_updown: True

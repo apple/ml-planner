@@ -1,0 +1,6 @@
+defaults:
+  - p2_prog_256_interp
+  - _self_
+
+architecture: guided_diffusion.model.unet.MultiStageUNetModel
+upsample_type: bilinear

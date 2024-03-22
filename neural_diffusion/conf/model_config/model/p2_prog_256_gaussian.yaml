@@ -1,0 +1,10 @@
+defaults:
+  - p2_base_256_cont
+  - _self_
+
+architecture: guided_diffusion.model.unet.ProgressiveUNetModel
+initial_size: 16
+stage_schedule: cosine
+stage_type: keep
+resize_type: gaussian
+noise_type: none

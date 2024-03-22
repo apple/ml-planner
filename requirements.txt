@@ -1,0 +1,10 @@
+# To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
+sacrebleu==1.5.1
+sumeval==0.2.2
+unidic-lite==1.0.8
+transformers==4.36.0
+tokenizers==0.12.1
+accelerate
+datasets >= 1.8.0
+sentencepiece != 0.1.92
+bert_score

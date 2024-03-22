@@ -1,0 +1,5 @@
+defaults:
+  - p2_eps_prog
+  - _self_
+
+architecture: "guided_diffusion.diffusion.continuous_diffusion.MultiStageContinuousDiffusion"

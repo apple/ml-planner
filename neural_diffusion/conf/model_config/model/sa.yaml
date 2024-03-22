@@ -1,0 +1,18 @@
+# default model configuration
+architecture: guided_diffusion.model.sa.SelfAttentionModel
+
+# placeholder
+image_size: 16
+
+# dimension params
+num_feature: 16
+hidden_size: 768
+
+# continuous diffuison model do not learn sigma
+# TODO: check with @Jiatao
+learn_sigma: False
+sigma_small: True
+
+# TODO: check with @Jiatao
+use_fp16: ${use_fp16}
+use_checkpoint: False

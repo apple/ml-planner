@@ -1,0 +1,23 @@
+defaults:
+  - p2_base_256_cont
+  - _self_
+
+# change the model architecture
+architecture: guided_diffusion.model.nerf.PixelNeRFModel
+
+encoder_config:
+  arch: 'unet_plane' 
+  f_dim: 32
+  num_planes: 3
+  box_warp: 0.9 
+
+decoder_config:
+  input_dim: ${..encoder_config.f_dim}
+  hidden_dim: 64
+
+rendering_options:
+  ray_start: 2.35
+  ray_end: 3.1
+  box_warp: ${..encoder_config.box_warp}
+  depth_samples: 32
+  depth_fine_samples: 32

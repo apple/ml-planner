@@ -1,0 +1,45 @@
+defaults:
+  - model_config: default
+  - _self_
+
+# data/global configs
+data_dir: ~
+class_cond: False
+random_flip: True
+data_transformation: False
+log_dir: bolt
+log_format: ~
+
+# training args
+schedule_sampler: "uniform"
+batch_size: 8
+use_fp16: False
+
+trainer:
+  microbatch: -1
+  
+  lr: 1e-4
+  weight_decay: 0.0
+  lr_anneal_steps: 0
+  ema_rate: "0.9999"
+  
+  fp16_scale_growth: 1e-3
+  
+  log_interval: 10
+  image_interval: 500
+  sample_interval: 5000
+  save_interval: 10000
+
+  cfg_dropout: ~
+
+resume_checkpoint: ~
+
+# seed
+seed: 137
+
+# ae config
+task_id: ~
+num_feature: 16
+sentence_len: 256
+ae_step: ~
+load_ckpt: ~

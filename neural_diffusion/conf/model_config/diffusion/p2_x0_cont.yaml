@@ -1,0 +1,9 @@
+defaults:
+  - pred_x0_loss_eps
+  - _self_
+
+continuous: True
+noise_shift: 1
+step_cond: time
+p2_gamma: 1
+p2_k: 1

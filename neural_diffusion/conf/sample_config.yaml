@@ -1,0 +1,62 @@
+defaults:
+  - model_config: default
+  - _self_
+
+# global configs
+data_dir: ~
+model_path: ~
+sample_dir: samples
+save_images: True
+
+# download from bolt
+bolt_task_id: ~
+bolt_model: ~
+
+use_fp16: False
+use_ddim: False
+cfg_weight: ~
+time_power: 1
+class_cond: False
+cond: 1
+forward: False
+
+num_samples: 1000
+batch_size: 16
+
+model_config:
+  diffusion:
+    continuous_sampling: False
+    
+    # arguments for continuous_sampling & continuous = False
+    timestep_respacing: "250"
+    use_ddim: ${use_ddim}
+    
+    # arguments for continuous = True
+    continuous_steps: 250
+    ddpm_ddim_eta: 1  # 0 means fully deterministic, 1 means stochastic
+
+
+clip_denoised: True
+
+# visualization
+diffusion_pbar: True
+output_full_traj: False
+output_quality: ~
+
+# seed
+seed: 137
+
+# store only last sample
+store_only_last_sample: False
+
+# ae config
+task_id: ~
+num_feature: 16
+sentence_len: 256
+ae_step: ~
+
+# cross_attention
+use_cross_attention: False
+
+# print dataset
+print_dataset: False

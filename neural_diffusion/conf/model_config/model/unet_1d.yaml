@@ -1,0 +1,17 @@
+defaults:
+  - p2_base_256
+  - _self_
+
+architecture: guided_diffusion.model.unet_1d.UNetModel
+
+# continuous diffuison model do not learn sigma
+learn_sigma: False
+sigma_small: True
+
+# 
+in_channels: 768
+out_channels: 768
+image_size: 16
+
+cond_feature: False
+
