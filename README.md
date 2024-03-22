@@ -1,7 +1,16 @@
+<h1 align="center"> PLANNER: Generating Diversified Paragraph via Latent Language Diffusion Model </h1>
+
+<p align="center">
+<a href="https://arxiv.org/pdf/2306.02531.pdf">📃 Paper</a>
+•
+<a href="https://machinelearning.apple.com/research/latent-language-diffusion-model" >📝 Blog</a>
+</p>
+
 # PLANNER: a latent text diffusion model
 
 This software project accompanies the research paper, [PLANNER: Generating Diversified Paragraph via Latent Language Diffusion Model](https://arxiv.org/pdf/2306.02531.pdf), published on NeurIPS 2023. 
 
+For further information, you can refer to our [research highlight post](https://machinelearning.apple.com/research/latent-language-diffusion-model) on the latent language diffusion model.
 
 
 <p align = "center">
