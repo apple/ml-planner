@@ -139,7 +139,6 @@ ENV/
 /model/
 /models/
 *.pdf
-/figures/
 
 # Misc
 .bashrc
